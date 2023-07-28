@@ -43,8 +43,8 @@ function App() {
                             innovative solutions that meet and exceed client expectations.
                         </p>
                         <div className="btn-group">
-                            <a href="cv/Dean Heeger CV.pdf" className="btn" download="">Download CV</a>
-                            <a href="contact.html" className="btn">Contact me</a>
+                            <a href="/" className="btn" download="">Download CV</a>
+                            <a href="/" className="btn">Contact me</a>
                         </div>
                         <div className="social">
                             <a href="https://www.instagram.com/dean_heeger/"><i className="fa-brands fa-instagram"></i></a>
@@ -103,7 +103,7 @@ function App() {
                           </p>
                           
                           <div class="btn-group">
-                              <a href="cv/Dean Heeger CV.pdf" class="btn active">Download CV</a>
+                              <a href="/" class="btn active">Download CV</a>
                           </div>
                           <div class="social">
                               <a href="https://www.instagram.com/dean_heeger/"><i class="fa-brands fa-instagram"></i></a>

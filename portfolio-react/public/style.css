@@ -156,30 +156,11 @@ nav .navlinks li a{
     font-family: outfit;
 }
 
-.hero-text-p{
-    background-color: #001d3d;
-    border-radius: 30px;
-}
-
 .btn-group{
     margin: 45px 0;
 }
 
 .btn-group .btn{
-    border-color: #ffc300;
-    color: #000;
-    font-weight: bold;
-    background-color: #ffc300;
-    padding: 12px 25px;
-    margin: 5pc 0;
-    margin-right: 7px;
-    border-radius: 30px;
-    border: 2px solid #ffc300;
-    box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
-    transition: background-color 1s;
-}
-
-.btn-group .btn active{
     border-color: #ffc300;
     color: #000;
     font-weight: bold;
