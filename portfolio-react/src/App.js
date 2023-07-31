@@ -44,7 +44,7 @@ function App() {
                             innovative solutions that meet and exceed client expectations.
                         </p>
                         <div className="btn-group">
-                            <a href="/" className="btn" download="">Download CV</a>
+                            <a href="./images/Dean Heeger CV.pdf" className="btn" download="">Download CV</a>
                             <a href="/" className="btn">Contact me</a>
                         </div>
                         <div className="social">
@@ -104,7 +104,7 @@ function App() {
                           </p>
                           
                           <div class="btn-group">
-                              <a href="/" class="btn active">Download CV</a>
+                              <a href="./images/Dean Heeger CV.pdf" class="btn active">Download CV</a>
                           </div>
                           <div class="social">
                               <a href="https://www.instagram.com/dean_heeger/"><i class="fa-brands fa-instagram"></i></a>
