@@ -27,10 +27,16 @@ body{
 
 header{
     padding: 40px 0 30px;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
+    position: fixed;
+    background-color: #000814;
+    left: 0;
+    /*z-index: 9999;*/
 }
 
 .logo{
@@ -110,6 +116,7 @@ nav .navlinks li a{
     overflow: hidden;
     /*border: 15px solid #001d3d;*/
     box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+    margin-top: 15%;
 }
 
 .hero-pic img{
@@ -126,6 +133,7 @@ nav .navlinks li a{
     max-width: 500px;
     display: flex;
     flex-direction: column;
+    margin-top: 15%;
 }
 
 .hero-text h5{
@@ -136,9 +144,8 @@ nav .navlinks li a{
 
 .input{
     color: #ffc300;
-    font-size: 16px;
     font-family: outfit;
-    font-size: 35px;
+    font-size: 32px;
     font-weight: bold;
 }
 
