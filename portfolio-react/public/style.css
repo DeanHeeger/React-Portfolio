@@ -105,8 +105,8 @@ nav .navlinks li a{
 
 nav .navlinks li a:hover{
     color: #fff;
-    /*text-decoration: underline;*/
-    transform: scale(1.2);
+    text-decoration: underline;
+    /*transform: scale(1.2);*/
 }
 
 .container{
