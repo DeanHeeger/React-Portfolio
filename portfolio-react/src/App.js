@@ -29,7 +29,8 @@ function App() {
                         <img src='/images/pic1.jpeg' alt="Profile pic"/>
                     </div>
                     <div className="hero-text">
-                        <h5>Hi! I am Dean Heeger, a <span className="input">Fullstack Developer</span></h5>
+                        <h5>Hi! I am Dean Heeger, a </h5>
+                        <span className="input">Fullstack Developer</span>
                         <br/>
                         <p>
                             Ever since I was a little boy, I loved solving problems and helping others. 

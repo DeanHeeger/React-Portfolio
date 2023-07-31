@@ -134,10 +134,12 @@ nav .navlinks li a{
     font-family: outfit;
 }
 
-.hero-text h5 span{
+.input{
     color: #ffc300;
     font-size: 16px;
     font-family: outfit;
+    font-size: 35px;
+    font-weight: bold;
 }
 
 .hero-text h1{
@@ -154,6 +156,7 @@ nav .navlinks li a{
 .hero-text p{
     color: #e5e5e5;
     font-family: outfit;
+    font-size: 18px;
 }
 
 .btn-group{
@@ -272,6 +275,6 @@ nav .navlinks li a{
         padding-top: 2rem;
     }
     .hero-text{
-        padding: 40px 0px;
+        padding: 10px 0px;
     }
 }
