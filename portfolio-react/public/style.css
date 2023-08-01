@@ -233,16 +233,10 @@ nav .navlinks li a:hover{
     transform: rotate(360deg);
 }
 
-.container .hero-contact .contact{
+.container .contact{
     background-color: #000814;
     display: flex;
     flex-direction: column;
-}
-
-.hero-contact h1{
-    color: #ffc300;
-    font-family: outfit;
-    font-size: 25px;
 }
 
 .contact input, textarea{
@@ -321,5 +315,11 @@ nav .navlinks li a:hover{
     }
     .hero-text{
         padding: 10px 0px;
+    }
+
+    .container .hero-text .contact{
+        padding: 10px 0px;
+        flex-direction: column;
+        padding-top: 2rem;
     }
 }
