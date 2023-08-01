@@ -59,10 +59,10 @@ function App() {
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
         <div>
-          <div class="hero-header">
-              <div class="wrapper">
-                  <div class="container">
-                      <div class="hero-text">
+          <div className="hero-header">
+              <div className="wrapper">
+                  <div className="container">
+                      <div className="hero-text">
                           <h1>About Me</h1>
 
                           <p>
@@ -103,8 +103,8 @@ function App() {
                               skills as a problem solver and technology enthusiast.
                           </p>
                           
-                          <div class="btn-group">
-                              <a href="./images/Dean Heeger CV.pdf" class="btn active">Download CV</a>
+                          <div className="btn-group">
+                              <a href="./images/Dean Heeger CV.pdf" className="btn active">Download CV</a>
                           </div>
                           <div class="social">
                               <a href="https://www.instagram.com/dean_heeger/"><i class="fa-brands fa-instagram"></i></a>
@@ -117,7 +117,21 @@ function App() {
               </div>
           </div>
       </div>
-
+      <div>
+        <div className="container">
+            <div className="hero-contact">
+                <h1>Contact Me</h1>
+                <input type="text" id="names" name="names" placeholder="Name and Surname"/>
+                <input type="text" id="email" name="email" placeholder="Email address"/>
+                <br/>
+                <input type="text" id="message" name="message" placeholder="Your message"/>
+                <div className="btn-group">
+                    <a href="/" className="btn">Send Message</a>
+                    <a href="/" className="btn">Clear</a>
+                </div>
+            </div>
+        </div>
+      </div>
     </div>
   );
 }
