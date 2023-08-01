@@ -163,6 +163,11 @@ nav .navlinks li a:hover{
     font-family: outfit;
 }
 
+/*.hero-text h2{
+    color: #ffc300;
+    font-family: outfit;
+}*/
+
 .hero-text h4{
     color: #ffc300;
     font-size: 3rem;
@@ -237,29 +242,22 @@ nav .navlinks li a:hover{
 .hero-contact h1{
     color: #ffc300;
     font-family: outfit;
-    font-size: 3rem;
+    font-size: 25px;
 }
 
-.contact input{
+.contact input, textarea{
     color: #000;
     width: 100%;
     background-color: #e5e5e5;
     padding: 12px 25px;
+    margin-top: 15px;
     margin-right: 7px;
     border-radius: 15px;
 }
 
-/*border-color: #ffc300;
-color: #000;
-font-weight: bold;
-background-color: #ffc300;
-padding: 12px 25px;
-margin: 5pc 0;
-margin-right: 7px;
-border-radius: 30px;
-border: 2px solid #ffc300;
-box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
-transition: background-color 1s;*/
+.contact .social{
+    margin-bottom: 50px;
+}
 
 /*Responsiveness*/
 @media(max-width:930px)

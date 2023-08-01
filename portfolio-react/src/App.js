@@ -119,18 +119,23 @@ function App() {
       </div>
       <div>
         <div className="container">
-            <div className="hero-contact">
-                <h1>Contact Me</h1>
-                <br/>
+            <div className="hero-text">
+                <h1>Contact me here:</h1>
                 <div className="contact">
                     <input type="text" id="names" name="names" placeholder="Name and Surname"/>
                     <br/>
                     <input type="text" id="email" name="email" placeholder="Email address"/>
                     <br/>
-                    <input type="text" id="message" name="message" placeholder="Your message"/>
+                    <textarea id="message" name="message" rows="4" col="50" placeholder="Your message"/>
                     <div className="btn-group">
                         <a href="/" className="btn">SUBMIT</a>
                         <a href="/" className="btn">CLEAR</a>
+                    </div>
+                    <div className="social">
+                        <a href="https://www.instagram.com/dean_heeger/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://za.linkedin.com/in/dean-heeger-32a915170"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://wa.me/+27826912641"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://github.com/DeanHeeger?tab=repositories"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
             </div>
