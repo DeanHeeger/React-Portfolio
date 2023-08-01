@@ -121,13 +121,17 @@ function App() {
         <div className="container">
             <div className="hero-contact">
                 <h1>Contact Me</h1>
-                <input type="text" id="names" name="names" placeholder="Name and Surname"/>
-                <input type="text" id="email" name="email" placeholder="Email address"/>
                 <br/>
-                <input type="text" id="message" name="message" placeholder="Your message"/>
-                <div className="btn-group">
-                    <a href="/" className="btn">Send Message</a>
-                    <a href="/" className="btn">Clear</a>
+                <div className="contact">
+                    <input type="text" id="names" name="names" placeholder="Name and Surname"/>
+                    <br/>
+                    <input type="text" id="email" name="email" placeholder="Email address"/>
+                    <br/>
+                    <input type="text" id="message" name="message" placeholder="Your message"/>
+                    <div className="btn-group">
+                        <a href="/" className="btn">SUBMIT</a>
+                        <a href="/" className="btn">CLEAR</a>
+                    </div>
                 </div>
             </div>
         </div>
