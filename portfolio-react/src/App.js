@@ -1,4 +1,5 @@
 import './App.css';
+import Navbar from './components/navbar';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
                         <a href="index.html"><i className="fa-solid fa-h"></i></a>
                         <div className="logo-text">Dean Heeger</div>
                     </div>
-                    <nav>
+                    <Navbar/>
+                    {/*<nav>
                         <div className="togglebtn">
                             <span></span>
                             <span></span>
@@ -22,7 +24,7 @@ function App() {
                             <li><a href="/">SKILLS</a></li>
                             <li><a href="/">CONTACT ME</a></li>
                         </ul>
-                    </nav>
+                    </nav>*/}
                 </header>
                 <div className="container">
                     <div className="hero-pic">
