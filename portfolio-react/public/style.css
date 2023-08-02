@@ -248,6 +248,56 @@ nav .navlinks li a:hover{
     margin-bottom: 50%;
 }
 
+.inner{
+    padding-top: 20px;
+}
+
+.header{
+    font-family: outfit;
+    font-size: 3rem;
+    color: #ffc300;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container-skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.skill-box{
+    padding: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.img{
+    /*width: 25px;
+    height: 25px;*/
+    border-radius: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
 /*Responsiveness*/
 @media(max-width:930px)
 {
@@ -314,6 +364,14 @@ nav .navlinks li a:hover{
 
     .container .hero-text .contact{
         padding: 10px 0px;
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    .container-skills{
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    .skill-box{
         flex-direction: column;
         padding-top: 2rem;
     }
