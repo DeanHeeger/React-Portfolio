@@ -9,10 +9,10 @@ function Navbar(){
             <span></span>
         </div>
         <ul className="navlinks">
-            <li><a href="/">HOME</a></li>
-            <li><a href="/">ABOUT</a></li>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
             <li><a href="/">SKILLS</a></li>
-            <li><a href="/">CONTACT ME</a></li>
+            <li><a href="#contact">CONTACT ME</a></li>
         </ul>
     </nav> 
     );
