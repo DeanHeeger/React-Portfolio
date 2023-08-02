@@ -48,7 +48,7 @@ function App() {
                                 </p>
                                 <div className="btn-group">
                                     <a href="./images/Dean Heeger CV.pdf" className="btn" download="">Download CV</a>
-                                    <a href="/" className="btn">Contact me</a>
+                                    <a href="#contact" className="btn">Contact me</a>
                                 </div>
                                 <div className="social">
                                     <a href="https://www.instagram.com/dean_heeger/"><i className="fa-brands fa-instagram"></i></a>
