@@ -15,23 +15,23 @@ function Carousel(){
         <div className="container-skills">
         <h1>Skills</h1>
         <Slider {...settings}>
-          <div>
-            <h3>1</h3>
+          <div className="card">
+            <img src="/images/html.png" alt="HTML"/>
           </div>
-          <div>
-            <h3>2</h3>
+          <div className="card">
+            <img src="/images/css-3.png" alt="CSS"/>
           </div>
-          <div>
-            <h3>3</h3>
+          <div className="card">
+          <img src="/images/js.png" alt="JavaScript"/>
           </div>
-          <div>
-            <h3>4</h3>
+          <div className="card">
+            <img src="/images/sql.png" alt="SQL"/>
           </div>
-          <div>
-            <h3>5</h3>
+          <div className="card">
+            <img src="/images/node-js.png" alt="NodeJS"/>
           </div>
-          <div>
-            <h3>6</h3>
+          <div className="card">
+            <img src="/images/python.png" alt="Python"/>
           </div>
         </Slider>
       </div>
