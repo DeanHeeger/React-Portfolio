@@ -37,7 +37,7 @@ header{
     position: fixed;
     background-color: #000814;
     left: 0;
-    /*z-index: 9999;*/
+    z-index: 9999;
 }
 
 .logo{
@@ -66,6 +66,7 @@ header{
     font-weight: 500;
     color: #fff;
 }
+
 
 nav .togglebtn{
     width: 35px;
