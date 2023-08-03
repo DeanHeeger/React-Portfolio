@@ -114,7 +114,11 @@ function App() {
       </div>
       <div>
         <section id="skills">
-            <Carousel/>
+            <div className='container'>
+                <div className='hero-text'>
+                  <Carousel/>  
+                </div>
+            </div>
             {/*<div className='inner'>
                 <div className='header'>
                     <h1>Skills</h1>

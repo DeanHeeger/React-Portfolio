@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: poppins,sans-serif;
+    font-family: outfit;
     text-decoration: none;
     background-color: #000814;
 }
@@ -144,12 +144,6 @@ nav .navlinks li a:hover{
     margin-top: 15%;
 }
 
-.hero-text h5{
-    color: #e5e5e5;
-    font-size: 14px;
-    font-family: outfit;
-}
-
 .input{
     color: #ffc300;
     font-family: outfit;
@@ -163,9 +157,21 @@ nav .navlinks li a:hover{
     font-family: outfit;
 }
 
+.hero-text h3{
+    color: #e5e5e5;
+    font-family: outfit;
+}
+
 .hero-text h4{
     color: #ffc300;
     font-size: 3rem;
+    font-family: outfit;
+}
+
+.hero-text h5{
+    color: #e5e5e5;
+    font-size: 14px;
+    font-family: outfit;
 }
 
 .hero-text p{
@@ -260,42 +266,14 @@ nav .navlinks li a:hover{
     padding: 1rem;
 }
 
-.container-skills{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
+.container-skills h1{
     text-align: center;
-    grid-gap: 1rem;
-    padding: 1rem 80px;
-    font-size: 1.2rem;
 }
 
-.skill-box{
-    padding: 1rem;
-    color: #fff;
-    cursor: pointer;
+#skills{
+    position: relative;
+    z-index: 0;
 }
-
-.skill-title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.img{
-    /*width: 25px;
-    height: 25px;*/
-    border-radius: 45px;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
 
 
 /*Responsiveness*/
@@ -370,9 +348,6 @@ nav .navlinks li a:hover{
     .container-skills{
         flex-direction: column;
         padding-top: 2rem;
-    }
-    .skill-box{
-        flex-direction: column;
-        padding-top: 2rem;
+        margin: 25%;
     }
 }
