@@ -1,5 +1,7 @@
+import React from 'react';
 import './App.css';
 import Navbar from './components/navbar';
+import Carousel from './components/Carousel';
 
 function App() {
   return (
@@ -112,7 +114,8 @@ function App() {
       </div>
       <div>
         <section id="skills">
-            <div className='inner'>
+            <Carousel/>
+            {/*<div className='inner'>
                 <div className='header'>
                     <h1>Skills</h1>
                 </div>
@@ -166,7 +169,7 @@ function App() {
                         </div>
                     </div>
                 </div>
-            </div>
+  </div>*/}
         </section>
       </div>
       <div>
