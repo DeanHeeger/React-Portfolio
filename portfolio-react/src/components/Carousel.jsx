@@ -18,6 +18,7 @@ function Carousel(){
           <div className="card">
             <img src="/images/html.png" alt="HTML" />
             <div className="class-body">
+              <br/>
               <h3>HTML5</h3>
               <p>
                 HTML5 is the latest version of HTML for creating web pages with new features like audio and video support, 
@@ -28,6 +29,7 @@ function Carousel(){
           <div className="card">
             <img src="/images/css-3.png" alt="CSS" />
             <div className="class-body">
+              <br/>
               <h3>CSS3</h3>
               <p>
                 CSS3 is the latest CSS version for describing web page presentation with new features like gradients, 
@@ -38,9 +40,10 @@ function Carousel(){
           <div className="card">
           <img src="/images/js.png" alt="JavaScript" />
           <div className="class-body">
+            <br/>
             <h3>JAVASCRIPT</h3>
             <p>
-              JavaScript creates interactive web pages and applications that run in the user's web browser. It's a core 
+              JavaScript creates interactive web pages and applications that run in the user's web browser. It is a core 
               web technology supported by all modern web browsers.
             </p>
           </div>
@@ -48,6 +51,7 @@ function Carousel(){
           <div className="card">
             <img src="/images/sql.png" alt="SQL" />
             <div className="class-body">
+              <br/>
               <h3>SQL</h3>
               <p>
                 SQL manages relational databases, allowing developers to interact with data and modify or delete it. It is 
@@ -58,6 +62,7 @@ function Carousel(){
           <div className="card">
             <img src="/images/node-js.png" alt="NodeJS" />
             <div className="class-body">
+              <br/>
               <h3>NODEJS</h3>
               <p>
                 Node.js is a JavaScript runtime for building scalable, network-based applications like web servers, 
@@ -68,6 +73,7 @@ function Carousel(){
           <div className="card">
             <img src="/images/python.png" alt="Python" />
             <div className="class-body">
+              <br/>
               <h3>PYTHON</h3>
               <p>
                 Python is a high-level, easy-to-learn programming language used for web development, data analysis, 
