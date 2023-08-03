@@ -10,7 +10,7 @@ function App() {
             <div className="wrapper">
                 <header>
                     <div className="logo">
-                        <a href="index.html"><i className="fa-solid fa-h"></i></a>
+                        <a href="#home"><i className="fa-solid fa-h"></i></a>
                         <div className="logo-text">Dean Heeger</div>
                     </div>
                     <Navbar/>
