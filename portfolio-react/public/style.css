@@ -276,6 +276,10 @@ nav .navlinks li a:hover{
     z-index: 0;
 }
 
+.card{
+    cursor: grab;
+}
+
 .card img{
     max-width: 100%;
     height: auto;
