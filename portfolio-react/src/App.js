@@ -119,61 +119,6 @@ function App() {
                   <Carousel/>  
                 </div>
             </div>
-            {/*<div className='inner'>
-                <div className='header'>
-                    <h1>Skills</h1>
-                </div>
-                <div className='container-skills'>
-                    <div className='skill-box'>
-                        <div className='skill-title'>
-                            <div className='img'>
-                                <img src="/images/html.png" alt="HTML"/>
-                            </div>
-                            <h3>HTML5</h3>
-                        </div>
-                    </div>
-                    <div className='skill-box'>
-                        <div className='skill-title'>
-                            <div className='img'>
-                                <img src="/images/css-3.png" alt="CSS"/>
-                            </div>
-                            <h3>CSS</h3>
-                        </div>
-                    </div>
-                    <div className='skill-box'>
-                        <div className='skill-title'>
-                            <div className='img'>
-                                <img src="/images/js.png" alt="JavaScript"/>
-                            </div>
-                            <h3>JavaScript</h3>
-                        </div>
-                    </div>
-                    <div className='skill-box'>
-                        <div className='skill-title'>
-                            <div className='img'>
-                                <img src="/images/sql.png" alt="SQL"/>
-                            </div>
-                            <h3>SQL</h3>
-                        </div>
-                    </div>
-                    <div className='skill-box'>
-                        <div className='skill-title'>
-                            <div className='img'>
-                                <img src="/images/node-js.png" alt="Node.js"/>
-                            </div>
-                            <h3>Node.js</h3>
-                        </div>
-                    </div>
-                    <div className='skill-box'>
-                        <div className='skill-title'>
-                            <div className='img'>
-                                <img src="/images/python.png" alt="Python"/>
-                            </div>
-                            <h3>Python</h3>
-                        </div>
-                    </div>
-                </div>
-  </div>*/}
         </section>
       </div>
       <div>
