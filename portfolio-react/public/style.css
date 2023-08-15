@@ -319,7 +319,7 @@ nav .navlinks li a:hover{
         bottom: 0;
         width: 60%;
         height: 100vh;
-        background-color: #222;
+        background-color: #000814;
         z-index: 3;
         box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
         padding: 25px;
