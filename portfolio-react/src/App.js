@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './App.css';
 import Navbar from './components/navbar';
 import Carousel from './components/Carousel';
+import Typed from 'typed.js';
 
 function App() {
+    const typedRef = useRef(null);
+
+    useEffect(() => {
+        new Typed(typedRef.current, {
+        strings:["Full Stack Developer", "Web Developer", "SQL Developer"],
+        typedSpeed:55,
+        backSpeed:50,
+        loop:true
+        });
+    });
+
   return (
     <div>
         <div className="hero-header">
@@ -22,8 +34,9 @@ function App() {
                         </div>
                             <div className="hero-text">
                                 <h5>Hi! I am Dean Heeger, a </h5>
-                                <span className="input">Fullstack Developer</span>
-                                <br/>
+                                <div>
+                                   <span className="input" ref={typedRef}/> 
+                                </div>
                                 <p>
                                     Ever since I was a little boy, I loved solving problems and helping others. 
                                     I loved seeing how things work, so I would take things apart and put them back together again. 
