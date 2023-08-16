@@ -10,7 +10,13 @@ function App() {
 
     useEffect(() => {
         const typedOptions = {
-        strings:["Full Stack Developer", "Web Developer", "SQL Developer"],
+        strings:[
+            "Full Stack Developer", 
+            "Web Developer", 
+            "SQL Developer",
+            "Programmer",
+            "Team Player"
+        ],
         typeSpeed:55,
         backSpeed:50,
         startDelay:100,
@@ -55,7 +61,7 @@ function App() {
                                 <br/>
                                 <p>
                                     With a strong background in programming languages such as HTML, CSS, JavaScript, 
-                                    Python, C#, and SQL, I am able to tackle complex software challenges and deliver 
+                                    Python, React, and SQL, I am able to tackle complex software challenges and deliver 
                                     innovative solutions that meet and exceed client expectations.
                                 </p>
                                 <div className="btn-group">
