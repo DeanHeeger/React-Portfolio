@@ -9,9 +9,11 @@ function App() {
 
     useEffect(() => {
         new Typed(typedRef.current, {
-        strings:["Full Stack Developer", " ", "Web Developer", " ", "SQL Developer"],
-        typedSpeed:100,
+        strings:["Full Stack Developer", "Web Developer", "SQL Developer"],
+        typedSpeed:250,
         backSpeed:250,
+        startDelay:100,
+        backDelay:100,
         loop:true
         });
     });
