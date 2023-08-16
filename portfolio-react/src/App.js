@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import './App.css';
 import Navbar from './components/navbar';
 import Carousel from './components/Carousel';
-import { useTypewriter, Cursor } from 'react-simple-typewriter';
-//import Typed from 'typed.js';
+import Typed from 'typed.js';
 
 function App() {
-    const [text] = useTypewriter({
-        words: ['Full Stack Developer', 'Web Developer', 'SQL Developer'],
-        loop:{}
+    const typedRef = useRef(null);
+
+    useEffect(() => {
+        new Typed(typedRef.current, {
+        strings:["Full Stack Developer", "Web Developer", "SQL Developer"],
+        typedSpeed:100,
+        backSpeed:125,
+        startDelay:100,
+        backDelay:100,
+        showCursor: true,
+        loop:true
+        });
     });
 
   return (
@@ -30,11 +38,7 @@ function App() {
                             <div className="hero-text">
                                 <h5>Hi! I am Dean Heeger, a </h5>
                                 <div>
-                                   {/*<span className="input" ref={typedRef}/>*/}
-                                   <span className='input'>
-                                    {text}
-                                   </span>
-                                   <Cursor/>
+                                   <span className="input" ref={typedRef}/>
                                 </div>
                                 <p>
                                     Ever since I was a little boy, I loved solving problems and helping others. 
@@ -112,11 +116,11 @@ function App() {
                             <div className="btn-group">
                                 <a href="./images/Dean Heeger CV.pdf" className="btn active">Download CV</a>
                             </div>
-                            <div className="social">
-                                <a href="https://www.instagram.com/dean_heeger/"><i className="fa-brands fa-instagram"></i></a>
-                                <a href="https://za.linkedin.com/in/dean-heeger-32a915170"><i className="fa-brands fa-linkedin"></i></a>
-                                <a href="https://wa.me/+27826912641"><i className="fa-brands fa-whatsapp"></i></a>
-                                <a href="https://github.com/DeanHeeger?tab=repositories"><i className="fa-brands fa-github"></i></a>
+                            <div class="social">
+                                <a href="https://www.instagram.com/dean_heeger/"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://za.linkedin.com/in/dean-heeger-32a915170"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://wa.me/+27826912641"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="https://github.com/DeanHeeger?tab=repositories"><i class="fa-brands fa-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -149,10 +153,10 @@ function App() {
                             <a href="/" className="btn">CLEAR</a>
                         </div>
                         <div className="social">
-                            <a href="https://www.instagram.com/dean_heeger/"><i className="fa-brands fa-instagram"></i></a>
-                            <a href="https://za.linkedin.com/in/dean-heeger-32a915170"><i className="fa-brands fa-linkedin"></i></a>
-                            <a href="https://wa.me/+27826912641"><i className="fa-brands fa-whatsapp"></i></a>
-                            <a href="https://github.com/DeanHeeger?tab=repositories"><i className="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/dean_heeger/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://za.linkedin.com/in/dean-heeger-32a915170"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://wa.me/+27826912641"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://github.com/DeanHeeger?tab=repositories"><i class="fa-brands fa-github"></i></a>
                         </div>
                     </div>
                 </div>
