@@ -25,7 +25,7 @@ function App() {
             typed.destroy(); //Destroy Typed instance when word unmounts.
         };
     }, []);
-    
+
   return (
     <div>
         <div className="hero-header">
@@ -123,11 +123,11 @@ function App() {
                             <div className="btn-group">
                                 <a href="./images/Dean Heeger CV.pdf" className="btn active">Download CV</a>
                             </div>
-                            <div class="social">
-                                <a href="https://www.instagram.com/dean_heeger/"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="https://za.linkedin.com/in/dean-heeger-32a915170"><i class="fa-brands fa-linkedin"></i></a>
-                                <a href="https://wa.me/+27826912641"><i class="fa-brands fa-whatsapp"></i></a>
-                                <a href="https://github.com/DeanHeeger?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                            <div className="social">
+                                <a href="https://www.instagram.com/dean_heeger/"><i className="fa-brands fa-instagram"></i></a>
+                                <a href="https://za.linkedin.com/in/dean-heeger-32a915170"><i className="fa-brands fa-linkedin"></i></a>
+                                <a href="https://wa.me/+27826912641"><i className="fa-brands fa-whatsapp"></i></a>
+                                <a href="https://github.com/DeanHeeger?tab=repositories"><i className="fa-brands fa-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -160,10 +160,10 @@ function App() {
                             <a href="/" className="btn">CLEAR</a>
                         </div>
                         <div className="social">
-                            <a href="https://www.instagram.com/dean_heeger/"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://za.linkedin.com/in/dean-heeger-32a915170"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://wa.me/+27826912641"><i class="fa-brands fa-whatsapp"></i></a>
-                            <a href="https://github.com/DeanHeeger?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/dean_heeger/"><i className="fa-brands fa-instagram"></i></a>
+                            <a href="https://za.linkedin.com/in/dean-heeger-32a915170"><i className="fa-brands fa-linkedin"></i></a>
+                            <a href="https://wa.me/+27826912641"><i className="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://github.com/DeanHeeger?tab=repositories"><i className="fa-brands fa-github"></i></a>
                         </div>
                     </div>
                 </div>
