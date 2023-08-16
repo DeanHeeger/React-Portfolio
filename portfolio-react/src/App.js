@@ -5,20 +5,27 @@ import Carousel from './components/Carousel';
 import Typed from 'typed.js';
 
 function App() {
+    //Code for typing animation on home page.
     const typedRef = useRef(null);
 
     useEffect(() => {
-        new Typed(typedRef.current, {
+        const typedOptions = {
         strings:["Full Stack Developer", "Web Developer", "SQL Developer"],
-        typedSpeed:100,
-        backSpeed:125,
+        typeSpeed:55,
+        backSpeed:50,
         startDelay:100,
         backDelay:100,
         showCursor: true,
         loop:true
-        });
-    });
+        };
 
+        const typed = new Typed(typedRef.current, typedOptions);
+
+        return () => {
+            typed.destroy(); //Destroy Typed instance when word unmounts.
+        };
+    }, []);
+    
   return (
     <div>
         <div className="hero-header">
