@@ -9,14 +9,31 @@ const Contact = () =>{
             names: '',
             email: '',
             message: '',
-        }
-    )
+        });
 
     let name, value;
+    console.log(userData);
     const data = (e) =>{
         name = e.target.name;
         value = e.target.value;
         setUserData({...userData, [name]:value});
+    };
+
+    const send = async(e) => {
+        const {names, email, message} = userData;
+        e.preventDefault();
+
+        const option = {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify({
+                names, email, message
+            })
+        }
+        const res = await fetch('https://dean-portfolio-4f075-default-rtdb.firebaseio.com/Messages.json', option);
+        console.log(res);
     }
 
     return(
@@ -31,7 +48,7 @@ const Contact = () =>{
                     <br/>
                     <textarea id="message" name="message" value={userData.message} rows="4" col="50" placeholder="Your message" onChange={data}/>
                     <div className="btn-group">
-                        <a href="/" className="btn">SUBMIT</a>
+                        <a href="/" className="btn" onClick={send}>SUBMIT</a>
                         <a href="/" className="btn">CLEAR</a>
                     </div>
                     <div className="social">
@@ -47,4 +64,4 @@ const Contact = () =>{
     )
 }
 
-export default Contact();
+export default Contact;

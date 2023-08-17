@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import './App.css';
 import Navbar from './components/navbar';
 import Carousel from './components/Carousel';
-//import Contact from './components/Contact';
+import Contact from './components/Contact';
 import Typed from 'typed.js';
 
 function App() {
@@ -153,29 +153,7 @@ function App() {
       </div>
       <div>
         <section id="contact">
-            {/*<Contact/>*/}
-            <div className="container">
-                <div className="hero-text">
-                    <h1>Contact me here:</h1>
-                    <div className="contact">
-                        <input type="text" id="names" name="names" placeholder="Name and Surname"/>
-                        <br/>
-                        <input type="text" id="email" name="email" placeholder="Email address"/>
-                        <br/>
-                        <textarea id="message" name="message" rows="4" col="50" placeholder="Your message"/>
-                        <div className="btn-group">
-                            <a href="/" className="btn">SUBMIT</a>
-                            <a href="/" className="btn">CLEAR</a>
-                        </div>
-                        <div className="social">
-                            <a href="https://www.instagram.com/dean_heeger/"><i className="fa-brands fa-instagram"></i></a>
-                            <a href="https://za.linkedin.com/in/dean-heeger-32a915170"><i className="fa-brands fa-linkedin"></i></a>
-                            <a href="https://wa.me/+27826912641"><i className="fa-brands fa-whatsapp"></i></a>
-                            <a href="https://github.com/DeanHeeger?tab=repositories"><i className="fa-brands fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Contact/> 
         </section>
       </div>
     </div>
