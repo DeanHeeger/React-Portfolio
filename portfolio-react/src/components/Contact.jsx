@@ -3,7 +3,7 @@
 
 import React, { useState } from 'react';
 
-function Contact(){
+const Contact = () =>{
     const [userData, setUserData] = useState(
         {
             names: '',
