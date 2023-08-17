@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from 'react';
 import './App.css';
 import Navbar from './components/navbar';
 import Carousel from './components/Carousel';
+//import Contact from './components/Contact';
 import Typed from 'typed.js';
 
 function App() {
@@ -152,6 +153,7 @@ function App() {
       </div>
       <div>
         <section id="contact">
+            {/*<Contact/>*/}
             <div className="container">
                 <div className="hero-text">
                     <h1>Contact me here:</h1>
