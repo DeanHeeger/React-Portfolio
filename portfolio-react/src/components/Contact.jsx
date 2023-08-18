@@ -1,6 +1,4 @@
 
-//SOMETHING IS WRONG WITH THIS CODE. FIGURE IT OUT OR TRY SOMETHING ELSE.
-
 import React, { useState } from 'react';
 
 const Contact = () =>{
@@ -34,7 +32,16 @@ const Contact = () =>{
         }
         const res = await fetch('https://dean-portfolio-4f075-default-rtdb.firebaseio.com/Messages.json', option);
         console.log(res);
-    }
+    };
+
+    const reset = (e) => {
+        e.preventDefault();
+        setUserData({
+            names: '',
+            email: '',
+            message: ''
+        });
+    };
 
     return(
         <>
@@ -49,7 +56,7 @@ const Contact = () =>{
                     <textarea id="message" name="message" value={userData.message} rows="4" col="50" placeholder="Your message" onChange={data}/>
                     <div className="btn-group">
                         <a href="/" className="btn" onClick={send}>SUBMIT</a>
-                        <a href="/" className="btn">CLEAR</a>
+                        <a href="/" className="btn" onClick={reset}>CLEAR</a>
                     </div>
                     <div className="social">
                         <a href="https://www.instagram.com/dean_heeger/"><i className="fa-brands fa-instagram"></i></a>
