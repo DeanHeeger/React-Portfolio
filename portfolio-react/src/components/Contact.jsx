@@ -49,11 +49,11 @@ const Contact = () =>{
             <div className="hero-text">
                 <h1>Contact me here:</h1>
                 <div className="contact">
-                    <input type="text" id="names" name="names" value={userData.names} placeholder="Name and Surname" onChange={data}/>
+                    <input type="text" id="names" name="names" value={userData.names} placeholder="Name and Surname" onChange={data} required/>
                     <br/>
-                    <input type="text" id="email" name="email" value={userData.email} placeholder="Email address" onChange={data}/>
+                    <input type="email" id="email" name="email" value={userData.email} placeholder="Email address" onChange={data} required/>
                     <br/>
-                    <textarea id="message" name="message" value={userData.message} rows="4" col="50" placeholder="Your message" onChange={data}/>
+                    <textarea id="message" name="message" value={userData.message} rows="4" col="50" placeholder="Your message" onChange={data} required/>
                     <div className="btn-group">
                         <a href="/" className="btn" onClick={send}>SUBMIT</a>
                         <a href="/" className="btn" onClick={reset}>CLEAR</a>
