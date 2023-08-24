@@ -1,7 +1,26 @@
-
 import React, { useState } from 'react';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const Contact = () =>{
+
+    const [recaptchaValue, setRecaptchaValue] = useState('');
+    const [showRecaptcha, setShowRecaptcha] = useState(true);
+
+    const handleRecaptchaChange = (value) => {
+        setRecaptchaValue(value);
+        setShowRecaptcha(false); // Hide the reCAPTCHA widget
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        //verify the reCAPTCHA response
+        if (!recaptchaValue){
+            console.log('please complete reCAPTCHA');
+            return;
+        };
+    }
+
     const [userData, setUserData] = useState(
         {
             names: '',
@@ -49,15 +68,22 @@ const Contact = () =>{
             <div className="hero-text">
                 <h1>Contact me here:</h1>
                 <div className="contact">
-                    <input type="text" id="names" name="names" value={userData.names} placeholder="Name and Surname" onChange={data} required/>
-                    <br/>
-                    <input type="email" id="email" name="email" value={userData.email} placeholder="Email address" onChange={data} required/>
-                    <br/>
-                    <textarea id="message" name="message" value={userData.message} rows="4" col="50" placeholder="Your message" onChange={data} required/>
-                    <div className="btn-group">
-                        <a href="/" className="btn" onClick={send}>SUBMIT</a>
-                        <a href="/" className="btn" onClick={reset}>CLEAR</a>
-                    </div>
+                    <form onSubmit={handleSubmit}>
+                        <input type="text" id="names" name="names" value={userData.names} placeholder="Name and Surname" onChange={data} required/>
+                        <br/>
+                        <input type="email" id="email" name="email" value={userData.email} placeholder="Email address" onChange={data} required/>
+                        <br/>
+                        <textarea id="message" name="message" value={userData.message} rows="4" col="50" placeholder="Your message" onChange={data} required/>
+                        
+                        {/*FIX reCAPTCHA FROM TIMING OUT*/}
+                        {showRecaptcha && (
+                        <ReCAPTCHA sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" onChange={handleRecaptchaChange}/>
+                        )}
+                        <div className="btn-group">
+                            <a href="/" className="btn" onClick={send}>SUBMIT</a>
+                            <a href="/" className="btn" onClick={reset}>CLEAR</a>
+                        </div>
+                    </form>
                     <div className="social">
                         <a href="https://www.instagram.com/dean_heeger/"><i className="fa-brands fa-instagram"></i></a>
                         <a href="https://za.linkedin.com/in/dean-heeger-32a915170"><i className="fa-brands fa-linkedin"></i></a>
