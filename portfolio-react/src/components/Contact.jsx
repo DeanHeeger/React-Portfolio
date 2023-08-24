@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
+import Social from './Social';
 
 const Contact = () =>{
 
@@ -84,12 +85,7 @@ const Contact = () =>{
                             <a href="/" className="btn" onClick={reset}>CLEAR</a>
                         </div>
                     </form>
-                    <div className="social">
-                        <a href="https://www.instagram.com/dean_heeger/" target="_blank" rel="noreferrer"><i className="fa-brands fa-instagram"></i></a>
-                        <a href="https://za.linkedin.com/in/dean-heeger-32a915170" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin"></i></a>
-                        <a href="https://wa.me/+27826912641" target="_blank" rel="noreferrer"><i className="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://github.com/DeanHeeger?tab=repositories" target="_blank" rel="noreferrer"><i className="fa-brands fa-github"></i></a>
-                    </div>
+                    <Social/>
                 </div>
             </div>
         </div>
