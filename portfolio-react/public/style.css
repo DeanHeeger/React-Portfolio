@@ -197,15 +197,16 @@ nav .navlinks li a:hover{
     border: 2px solid #ffc300;
     box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
     transition: background-color 1s;
+    cursor: pointer;
 }
 
-.btn-group .btn:hover{
+.btn:hover{
     background-color: #000814;
     color: #fff;
     border: 2px solid #ffc300;
 }
 
-.btn-group .btn.active:hover{
+.btn.active:hover{
     background-color: #000814;
     color: #fff;
     border: 2px solid #ffc300;
