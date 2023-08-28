@@ -80,7 +80,7 @@ const Contact = () =>{
                         {showRecaptcha && (
                         <ReCAPTCHA sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" onChange={handleRecaptchaChange}/>
                         )}
-                        <div className="btn-group">
+                        <div>
                             {/*<a href="/" className="btn" onClick={send}>SUBMIT</a>*/}
                             <button type='submit' className='btn' onClick={send}>SUBMIT</button>
                             <button type='button' className='btn' onClick={reset}>CLEAR</button>

@@ -181,11 +181,11 @@ nav .navlinks li a:hover{
     font-size: 18px;
 }
 
-/*.btn-group{
+.btn-group{
     margin: 45px 0;
-}*/
+}
 
-.btn-group .btn{
+.btn{
     border-color: #ffc300;
     color: #000;
     font-weight: bold;
