@@ -15,6 +15,7 @@ function App() {
             <div className="wrapper">
                 <header>
                     <div className="logo">
+                        &nbsp; &nbsp;
                         <a href="#home"><i className="fa-solid fa-h"></i></a>
                         <div className="logo-text">Dean Heeger</div>
                     </div>

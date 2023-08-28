@@ -14,6 +14,7 @@ function Carousel(){
     return(
         <div className="container-skills">
         <h1>Skills</h1>
+        <br/>
         <Slider {...settings}>
           <div className="card">
             <img src="/images/html.png" alt="HTML" />
