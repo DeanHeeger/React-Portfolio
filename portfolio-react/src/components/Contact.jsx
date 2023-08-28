@@ -34,7 +34,8 @@ const Contact = () =>{
             setUserData({...userData, email: ''}); //This will clear the email field
         } 
         else{
-          sendDataToFireBase();  
+            alert('Message sent! Click CLEAR to send a new message.');
+            sendDataToFireBase();  
         }
 
         
