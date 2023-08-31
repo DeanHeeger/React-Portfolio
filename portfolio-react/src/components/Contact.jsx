@@ -28,7 +28,7 @@ const Contact = () =>{
         }
 
         //Email regex validation
-        const emailRegex = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/; //regex pattern
+        const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/; //regex pattern
         if (!emailRegex.test(userData.email)){
             alert('Invalid email address!');
             setUserData({...userData, email: ''}); //This will clear the email field
