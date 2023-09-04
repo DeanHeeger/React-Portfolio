@@ -90,7 +90,7 @@ const Contact = () =>{
                         
                         {/*FIX reCAPTCHA FROM TIMING OUT*/}
                         {showRecaptcha && (
-                        <ReCAPTCHA sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" onChange={handleRecaptchaChange}/>
+                        <ReCAPTCHA sitekey="6LcEYfonAAAAAJFViH82_dh8iPQ7b3GeD2_Q2yIv" onChange={handleRecaptchaChange}/>
                         )}
                         <div>
                             <button type='submit' className='btn'>SUBMIT</button>
