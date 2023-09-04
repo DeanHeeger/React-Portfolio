@@ -79,24 +79,27 @@ const Contact = () =>{
         <>
         <div className="container">
             <div className="hero-text">
-                <h1>Contact me here:</h1>
                 <div className="contact">
-                    <form onSubmit={handleSubmit}>
-                        <input type="text" id="names" name="names" value={userData.names} placeholder="Name and Surname" onChange={data}/>
-                        <br/>
-                        <input type="email" id="email" name="email" value={userData.email} placeholder="Email address" onChange={data}/>
-                        <br/>
-                        <textarea id="message" name="message" value={userData.message} rows="4" col="50" placeholder="Your message" onChange={data}/>
+                    <div className="contact-section">
+                        <img src='./images/contact-me.gif' alt="Contact Me"/>
+                
+                        <h1>Contact me here:</h1>
+                            <form onSubmit={handleSubmit}>
+                                <input type="text" id="names" name="names" value={userData.names} placeholder="Name and Surname" onChange={data}/>
+                                <br/>
+                                <input type="email" id="email" name="email" value={userData.email} placeholder="Email address" onChange={data}/>
+                                <br/>
+                                <textarea id="message" name="message" value={userData.message} rows="4" col="50" placeholder="Your message" onChange={data}/>
                         
-                        {/*FIX reCAPTCHA FROM TIMING OUT*/}
-                        {showRecaptcha && (
-                        <ReCAPTCHA sitekey="6LcEYfonAAAAAJFViH82_dh8iPQ7b3GeD2_Q2yIv" onChange={handleRecaptchaChange}/>
-                        )}
-                        <div>
-                            <button type='submit' className='btn'>SUBMIT</button>
-                            <button type='button' className='btn' onClick={reset}>CLEAR</button>
-                        </div>
-                    </form>
+                                {showRecaptcha && (
+                                <ReCAPTCHA sitekey="6LcEYfonAAAAAJFViH82_dh8iPQ7b3GeD2_Q2yIv" onChange={handleRecaptchaChange}/>
+                                )}
+                                <div>
+                                    <button type='submit' className='btn'>SUBMIT</button>
+                                    <button type='button' className='btn' onClick={reset}>CLEAR</button>
+                                </div>
+                            </form>
+                    </div>
                     <Social/>
                 </div>
             </div>
