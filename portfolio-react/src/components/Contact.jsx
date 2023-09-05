@@ -81,7 +81,7 @@ const Contact = () =>{
             <div className="hero-text">
                 <div className="contact">
                     <div className="contact-section">
-                        <img src='./images/contact-me.gif' alt="Contact Me"/>
+                        {/*<img src='./images/contact-me.gif' alt="Contact Me"/>*/}
                 
                         <h1>Contact me here:</h1>
                             <form onSubmit={handleSubmit}>
