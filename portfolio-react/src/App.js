@@ -2,7 +2,6 @@ import './App.css';
 import Navbar from './components/navbar';
 import Carousel from './components/Carousel';
 import Contact from './components/Contact';
-import Social from './components/Social';
 import About from './components/About';
 import Home from './components/Home';
 
@@ -28,7 +27,6 @@ function App() {
                         </div>
                             <div className="hero-text">
                                 <Home/>
-                                <Social/>
                             </div>
                     </div>
                 </section>
@@ -41,7 +39,6 @@ function App() {
                     <div className="container">
                         <div className="hero-text">
                             <About/>
-                            <Social/>
                         </div>
                     </div>
                 </section>
