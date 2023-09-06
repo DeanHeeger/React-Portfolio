@@ -15,7 +15,7 @@ const Contact = () =>{
 
     const handleRecaptchaChange = (value) => {
         setRecaptchaValue(value);
-        setShowRecaptcha(false); // Hide the reCAPTCHA widget
+        //setShowRecaptcha(false); // Hide the reCAPTCHA widget
     };
 
     const handleSubmit = (e) => {
