@@ -35,6 +35,7 @@ const Contact = () =>{
         } 
         else{
             alert('Message sent! Click CLEAR to send a new message.');
+            setUserData({...userData, names: '', email: '', message: ''});
             sendDataToFireBase();  
         }
 
