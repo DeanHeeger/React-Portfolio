@@ -17,7 +17,9 @@ function Carousel(){
         <br/>
         <Slider {...settings}>
           <div className="card">
-            <img src="/images/html.png" alt="HTML" />
+            <div className="images">
+              <img src="/images/html.png" alt="HTML" />
+            </div>
             <div className="class-body">
               <br/>
               <h3>HTML5</h3>
@@ -28,7 +30,9 @@ function Carousel(){
             </div>
           </div>
           <div className="card">
-            <img src="/images/css-3.png" alt="CSS" />
+            <div className="images">
+              <img src="/images/css-3.png" alt="CSS" />
+            </div>
             <div className="class-body">
               <br/>
               <h3>CSS3</h3>
@@ -39,7 +43,9 @@ function Carousel(){
             </div>
           </div>
           <div className="card">
-          <img src="/images/js.png" alt="JavaScript" />
+          <div className="images">
+            <img src="/images/js.png" alt="JavaScript" />
+          </div>
           <div className="class-body">
             <br/>
             <h3>JAVASCRIPT</h3>
@@ -50,7 +56,9 @@ function Carousel(){
           </div>
           </div>
           <div className="card">
-            <img src="/images/sql.png" alt="SQL" />
+            <div className="images">
+              <img src="/images/sql.png" alt="SQL" />
+            </div>
             <div className="class-body">
               <br/>
               <h3>SQL</h3>
@@ -61,7 +69,9 @@ function Carousel(){
             </div>
           </div>
           <div className="card">
-            <img src="/images/node-js.png" alt="NodeJS" />
+            <div className="images">
+              <img src="/images/node-js.png" alt="NodeJS" />
+            </div>
             <div className="class-body">
               <br/>
               <h3>NODEJS</h3>
@@ -72,7 +82,9 @@ function Carousel(){
             </div>
           </div>
           <div className="card">
-            <img src="/images/python.png" alt="Python" />
+            <div className="images">
+              <img src="/images/python.png" alt="Python" />
+            </div>
             <div className="class-body">
               <br/>
               <h3>PYTHON</h3>

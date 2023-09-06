@@ -281,11 +281,17 @@ nav .navlinks li a:hover{
 
 .card{
     cursor: grab;
+    text-align: center;
 }
 
 .card img{
-    max-width: 100%;
-    height: auto;
+    max-width: 350px;
+    max-height: 350px;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
 }
 
 
