@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import Social from './Social';
+import emailjs from '@emailjs/browser';
+
 
 const Contact = () =>{
 
@@ -23,8 +25,8 @@ const Contact = () =>{
 
         //verify the reCAPTCHA response
         if (!recaptchaValue){
-            alert('please complete reCAPTCHA');
-            return;
+           alert('please complete reCAPTCHA');
+           return;
         }
 
         //Email regex validation
@@ -34,17 +36,40 @@ const Contact = () =>{
             setUserData({...userData, email: ''}); //This will clear the email field
         } 
         else{
-            alert('Message sent! Click CLEAR to send a new message.');
+            alert('Message sent! Thank you for contacting me.');
             setUserData({...userData, names: '', email: '', message: ''});
             sendDataToFireBase();  
         }
 
+        //EmailJS
+        const serviceID = 'service_5gmpf6a';
+        const templateID = 'template_rx7xh5a';
+        const publicKey = 'Thm7ha6w_Ko2bsFYC';
+
+        //Create new object containing dynamic template params
+        const templateParams = {
+            from_name: userData.names,
+            from_email: userData.email,
+            to_name: 'Dean Heeger',
+            message: userData.message,
+        };
         
+        //Send email
+        emailjs.send(serviceID, templateID, templateParams, publicKey).then((response) => {
+            console.log('Email sent successfully!', response);
+            setUserData({...userData, names: '', email: '', message: ''});
+        })
+        .catch((error) => {
+            console.error('Error sending email: ', error);
+        })
     };
 
     const data = (e) =>{
         const { name, value } = e.target;
-        setUserData({...userData, [name]:value});
+        setUserData((prevUserData) => ({
+            ...prevUserData,
+            [name]: value,
+        }));
     };
 
     //Function to send data to FireBase
@@ -85,7 +110,7 @@ const Contact = () =>{
                         {/*<img src='./images/contact-me.gif' alt="Contact Me"/>*/}
                 
                         <h1>Contact me here:</h1>
-                            <form onSubmit={handleSubmit}>
+                            <form id='contact' onSubmit={handleSubmit}>
                                 <input type="text" id="names" name="names" value={userData.names} placeholder="Name and Surname" onChange={data} required/>
                                 <br/>
                                 <input type="email" id="email" name="email" value={userData.email} placeholder="Email address" onChange={data}/>
