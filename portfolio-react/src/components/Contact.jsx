@@ -23,7 +23,7 @@ const Contact = () =>{
 
         //verify the reCAPTCHA response
         if (!recaptchaValue){
-            console.log('please complete reCAPTCHA');
+            alert('please complete reCAPTCHA');
             return;
         }
 
@@ -86,12 +86,12 @@ const Contact = () =>{
                 
                         <h1>Contact me here:</h1>
                             <form onSubmit={handleSubmit}>
-                                <input type="text" id="names" name="names" value={userData.names} placeholder="Name and Surname" onChange={data}/>
+                                <input type="text" id="names" name="names" value={userData.names} placeholder="Name and Surname" onChange={data} required/>
                                 <br/>
                                 <input type="email" id="email" name="email" value={userData.email} placeholder="Email address" onChange={data}/>
                                 <br/>
-                                <textarea id="message" name="message" value={userData.message} rows="4" col="50" placeholder="Your message" onChange={data}/>
-                        
+                                <textarea id="message" name="message" value={userData.message} rows="4" col="50" placeholder="Your message" onChange={data} required/>
+                                <br/>
                                 {showRecaptcha && (
                                 <ReCAPTCHA sitekey="6LcEYfonAAAAAJFViH82_dh8iPQ7b3GeD2_Q2yIv" onChange={handleRecaptchaChange}/>
                                 )}
