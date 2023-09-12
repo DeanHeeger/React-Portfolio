@@ -54,7 +54,7 @@ const Contact = () =>{
             message: userData.message,
         };
         
-        //Send email
+        //Send email logic
         emailjs.send(serviceID, templateID, templateParams, publicKey).then((response) => {
             console.log('Email sent successfully!', response);
             setUserData({...userData, names: '', email: '', message: ''});
