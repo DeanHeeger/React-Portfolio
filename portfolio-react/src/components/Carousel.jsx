@@ -1,21 +1,38 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
 function Carousel(){
+    const sliderRef = useRef(null);
+
+    useEffect(() => {
+      const slider = sliderRef.current;
+
+      const autoSlide = () => {
+        slider.slickNext();
+      };
+
+      const interval = setInterval(autoSlide, 3000);
+
+      return () => {
+        clearInterval(interval);
+      };
+    }, []);
+
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: false,
       };
     return(
         <div className="container-skills">
         <h1>Skills</h1>
         <br/>
-        <Slider {...settings}>
+        <Slider ref={sliderRef}{...settings}>
           <div className="card">
             <div className="images">
               <img src="/images/html.png" alt="HTML" />
