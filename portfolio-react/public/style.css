@@ -25,7 +25,7 @@ body{
     width: 1280px;
     max-width: 95%;
     margin: 0 auto;
-    padding: 0 20px;
+    /*padding: 0 20px;*/
 }
 
 header{
@@ -353,7 +353,7 @@ nav .navlinks li a:hover{
 {
     .container{
         flex-direction: column;
-        padding-top: 2rem;
+        padding-top: 8rem;
     }
     .hero-text{
         padding: 10px 0px;
