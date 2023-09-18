@@ -11,6 +11,13 @@ function Navbar(){
         navRef.current.classList.toggle("open");
     };
 
+    const navLinkClickHandler = () => {
+        if (isClicked) {
+          setIsClicked(false);
+          navRef.current.classList.remove('open');
+        }
+      };
+
     return(
         <nav>
         <div className={`togglebtn ${isClicked ? "click" : ""}`} onClick={toggleBtnClickHandler}>
@@ -19,10 +26,10 @@ function Navbar(){
             <span></span>
         </div>
         <ul className="navlinks" ref={navRef}>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#contact">CONTACT ME</a></li>
+            <li><a href="#home" onClick={navLinkClickHandler}>HOME</a></li>
+            <li><a href="#about" onClick={navLinkClickHandler}>ABOUT</a></li>
+            <li><a href="#skills" onClick={navLinkClickHandler}>SKILLS</a></li>
+            <li><a href="#contact" onClick={navLinkClickHandler}>CONTACT ME</a></li>
         </ul>
     </nav> 
     );
