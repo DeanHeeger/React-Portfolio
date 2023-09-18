@@ -25,7 +25,6 @@ body{
     width: 1280px;
     max-width: 95%;
     margin: 0 auto;
-    /*padding: 0 20px;*/
 }
 
 header{
@@ -110,14 +109,13 @@ nav .navlinks li a{
 nav .navlinks li a:hover{
     color: #fff;
     text-decoration: underline;
-    /*transform: scale(1.2);*/
 }
 
 .container{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 4rem;
+    padding-top: 3rem;
 }
 
 .container .hero-pic{
@@ -125,7 +123,6 @@ nav .navlinks li a:hover{
     height: 300px;
     border-radius: 50%;
     overflow: hidden;
-    /*border: 15px solid #001d3d;*/
     box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
     margin-top: 15%;
 }
@@ -354,7 +351,6 @@ nav .navlinks li a:hover{
 {
     .container{
         flex-direction: column;
-        padding-top: 8rem;
     }
     .hero-text{
         padding: 10px 0px;
