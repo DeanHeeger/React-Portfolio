@@ -112,6 +112,19 @@ function Carousel(){
 </p>*/}
             </div>
           </div>
+          <div className="card">
+            <div className="images">
+              <img src="/images/react.png" alt="React" />
+            </div>
+            <div className="class-body">
+              <br/>
+              <h3>React Native</h3>
+              {/*<p>
+                Node.js is a JavaScript runtime for building scalable, network-based applications like web servers, 
+                chat apps, and APIs. It has a large community and is supported by many libraries and tools.
+  </p>*/}
+            </div>
+          </div>
         </Slider>
       </div>
     )
