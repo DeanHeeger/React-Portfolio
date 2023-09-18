@@ -300,6 +300,7 @@ nav .navlinks li a:hover{
 {
     nav .togglebtn{
         display: initial;
+        margin-right: 4rem;
     }
     /*for toggle button**/
     .click{
@@ -367,6 +368,8 @@ nav .navlinks li a:hover{
     .container-skills{
         flex-direction: column;
         padding-top: 2rem;
-        margin: 25%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin: 5%;
     }
 }
