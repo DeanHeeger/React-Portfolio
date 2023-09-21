@@ -296,7 +296,7 @@ nav .navlinks li a:hover{
 {
     nav .togglebtn{
         display: initial;
-        margin-right: 4rem;
+        margin-right: 2rem;
     }
     /*for toggle button**/
     .click{
@@ -349,6 +349,12 @@ nav .navlinks li a:hover{
 
 @media(max-width:768px)
 {
+
+    nav .togglebtn{
+        display: initial;
+        margin-right: 2rem;
+    }
+    
     .container{
         flex-direction: column;
     }
@@ -381,4 +387,5 @@ nav .navlinks li a:hover{
         flex-wrap: wrap;
         justify-content: center;
     }
+
 }
