@@ -29,6 +29,7 @@ function Carousel(){
         autoplay: false,
       };
     return(
+      <div className="response">
         <div className="container-skills">
         <h1>Skills</h1>
         <br/>
@@ -98,6 +99,7 @@ function Carousel(){
           </div>
         </Slider>
       </div>
+    </div>
     )
 }
 

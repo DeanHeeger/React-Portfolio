@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
     return(
-        <div>
+        <div className="response">
             <h1>About Me</h1>
             <p>
                 My name is <span style={{color: '#ffc300'}}>Dean Heeger</span>, I am 23 and I am a <span style={{color: '#ffc300'}}>software developer</span>.

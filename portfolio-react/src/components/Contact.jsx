@@ -102,7 +102,7 @@ const Contact = () =>{
     };
 
     return(
-        <>
+    <div className='response'>
         <div className="container">
             <div className="hero-text">
                 <div className="contact">
@@ -128,7 +128,7 @@ const Contact = () =>{
                 </div>
             </div>
         </div>
-        </>
+    </div>
     )
 }
 

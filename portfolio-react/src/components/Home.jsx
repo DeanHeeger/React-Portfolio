@@ -31,7 +31,7 @@ const Home = () => {
     }, []);
 
     return(
-        <div>
+        <div className="response">
             <h5>Hi! I am Dean Heeger, a </h5>
             <div>
                 <span className="input" ref={typedRef}/>
