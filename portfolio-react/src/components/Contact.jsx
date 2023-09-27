@@ -88,10 +88,12 @@ const Contact = () =>{
             }),
         };
 
+        //fetch
         const response = await fetch('https://dean-portfolio-4f075-default-rtdb.firebaseio.com/Messages.json', options);
         console.log(response);
     }
 
+    //reset text boxes
     const reset = (e) => {
         e.preventDefault();
         setUserData({
