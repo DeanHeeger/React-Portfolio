@@ -15,7 +15,7 @@ const About = () => {
             <br/>
             <p>
                 Over time, my interest in technology grew stronger, and I began to explore various 
-                programming languages such as <span style={{color: '#ffc300'}}>HTML, CSS, JavaScript, Python, React Native, and SQL</span>. These languages 
+                programming languages such as <span style={{color: '#ffc300'}}>HTML, CSS, JavaScript, Python, React, and SQL</span>. These languages 
                 allowed me to tackle complex software challenges and deliver innovative solutions that 
                 exceeded client expectations.
             </p>

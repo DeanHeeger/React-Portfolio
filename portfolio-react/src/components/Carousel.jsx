@@ -94,7 +94,7 @@ function Carousel(){
             </div>
             <div className="class-body">
               <br/>
-              <h3>React Native</h3>
+              <h3>React</h3>
             </div>
           </div>
         </Slider>
